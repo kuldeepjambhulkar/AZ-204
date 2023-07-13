@@ -1,0 +1,41 @@
+/* give background color as teal to a div with class parent, make its height as 50vh & width as 50vw */
+.parent {
+    /* background-color: teal; */
+    /* add this background image to parent div "https://plus.unsplash.com/premium_photo-1669559809539-acc3b2e05f8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=400&q=60" */
+    background-image: url("https://plus.unsplash.com/premium_photo-1669559809539-acc3b2e05f8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=400&q=60");
+    background-size: cover;
+    
+    height: 50vh;
+    width: 50vw;
+}   
+
+/* give background color as orange to a div with class left, make its height half of it's parent div & place it on the left center of its parent div */
+.left {
+    background-color: orange;
+    height: 50px;
+    width: 50px;
+
+    /* add animation to this div where the div should rotate infinitely  */
+    animation: rotate 2s infinite;
+
+}
+
+/* give background color as yellow to a div with class right, make its height half of it's parent div & place it on the right center of its parent div */
+.right {
+    background-color: yellow;
+    height: 50px;
+    width: 50px;
+
+    /* add animation to this div where the div should rotate infinitely  */
+    animation: rotate 2s infinite;
+}
+
+/* write code for the rotate animation */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
